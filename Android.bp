@@ -1,0 +1,25 @@
+package {
+    default_applicable_licenses: ["tools_apksig_license"],
+}
+
+license {
+    name: "tools_apksig_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-Apache-2.0",
+    ],
+    license_text: [
+        "LICENSE",
+    ],
+}
+
+java_import {
+    name: "apksig",
+    jars: ["lib64/apksig.jar"],
+    host_supported: true,
+}
+
+java_import_host {
+    name: "apksigner",
+    jars: ["bin/apksigner.jar"],
+}

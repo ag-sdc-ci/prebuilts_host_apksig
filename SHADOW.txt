@@ -1,0 +1,6 @@
+shadow prebuilt repo: apksig (host)
+  package: apksig 17.0.0-1 (PKGBUILD build, any)
+  upstream: platform/tools/apksig (branch: main)
+  api-level: universal (JVM bytecode host library & tool, Android 17 / API 37 baseline)
+  layout: .pkg.tar.zst blob at root, lib64/apksig.jar, bin/apksigner.jar, bin/apksigner; Android.bp providing apksig, apksigner
+  date: 2026-10-19

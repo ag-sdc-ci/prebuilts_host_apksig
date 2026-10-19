@@ -1,0 +1,2 @@
+#!/bin/sh
+exec java -cp "/usr/share/java/apksig/apksigner.jar:/usr/share/java/apksig/apksig.jar:/usr/share/java/conscrypt/*" com.android.apksigner.ApkSignerTool "$@"
